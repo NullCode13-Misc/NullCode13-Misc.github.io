@@ -12,7 +12,7 @@
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
     "watch:html": "onchange \"src/views\" -- npm run build:html",
     "watch": "npm run watch:css && npm run watch:html",
-    "build": "npm run build:css && npm run build:images && npm run build:html && mv dist/index.html ."
+    "build": "npm run build:css && npm run build:images && npm run build:html"
   },
   "repository": {
     "type": "git",
