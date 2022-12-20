@@ -1,8 +1,17 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+@import '_center.scss';
+@import '_bubble.scss';
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+$font-stack: Gilroy, sans-serif;
+$primary-color: #333;
+$background: url('images/background.jpg');
+
+.header {
+    @include centre;
 }
 
+.main {
+    color: white;
+    font-family: $font-stack;
+    font-weight: 900;
+    font-size: 40px;
+}
