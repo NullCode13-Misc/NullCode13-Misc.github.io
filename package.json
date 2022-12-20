@@ -5,13 +5,17 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
+    
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
     "css:lint": "stylelint src/scss/*.scss  --custom-syntax postcss-scss",
     "css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
 
-    "watch:css": "onchange \"src/scss\" -- npm run css"
+    "images": "imagemin src/images/**/* --out-dir=dist/images",
+
+    "watch:css": "onchange \"src/scss\" -- npm run css",
+
+    "build": "npm run css && npm run images"
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,7 @@
   "homepage": "https://github.com/NullCode13-Misc/nullcode13-misc.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "imagemin-cli": "^7.0.0",
     "node-sass": "^8.0.0",
     "onchange": "^7.1.0",
     "postcss-cli": "^10.1.0",
