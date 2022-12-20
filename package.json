@@ -1,0 +1,23 @@
+{
+  "name": "redshop",
+  "version": "1.0.0",
+  "description": "Official website for redshop",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NullCode13-Misc/nullcode13-misc.github.io.git"
+  },
+  "author": "NullCode1337",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NullCode13-Misc/nullcode13-misc.github.io/issues"
+  },
+  "homepage": "https://github.com/NullCode13-Misc/nullcode13-misc.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
