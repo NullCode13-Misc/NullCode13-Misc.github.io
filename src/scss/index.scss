@@ -1,6 +1,7 @@
 @import '_center.scss';
 @import '_bubble.scss';
-@import '_footer.scss';
+@import '_tooltip.scss';
+@import '_fonts.scss';
 
 $font-stack: Gilroy, sans-serif;
 $primary-color: #333;
@@ -21,7 +22,7 @@ body {
 
 .main {
     color: white;
-    font-family: $font-stack;
+    font-family: Impact, sans-serif;
     font-weight: 900;
     font-size: 40px;
 }
@@ -31,4 +32,22 @@ body {
     font-family: $font-stack;
     font-weight: 500;
     font-size: 20px;
+}
+
+.float{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #0c9;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 5px 25px #3d3c3c;
+    z-index: 999;
+}
+
+.my-float{
+	margin-top: 20px;
 }
