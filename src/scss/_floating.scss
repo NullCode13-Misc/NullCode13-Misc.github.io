@@ -1,0 +1,13 @@
+@mixin create_floating_button() {
+    position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #0c9;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 5px 25px #3d3c3c;
+    z-index: 999;
+}

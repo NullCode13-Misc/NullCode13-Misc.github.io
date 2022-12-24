@@ -20,6 +20,10 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
   @return nth($list, random(length($list)));
 }
 
+.cover {
+  background-color: rgba(0,0,0,0.25);
+}
+
 .bubbles {
   position: relative;
   width: 100%;

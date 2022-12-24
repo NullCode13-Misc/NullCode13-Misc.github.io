@@ -7,7 +7,7 @@ Both axis : @include centre;
 Div : @include centre(div);
 */
 
-@mixin centre($axis: "both"){
+@mixin centre($axis: "div"){
     position: absolute;
     @if $axis == "y"{
         top: 50%;
