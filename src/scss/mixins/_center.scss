@@ -3,8 +3,8 @@ USAGE:
 
 Y axis : @include centre(y);
 X axis : @include centre(x);
-Both axis : @include centre;
-Div : @include centre(div);
+Both axis : @include centre(both);
+Div : @include centre;
 */
 
 @mixin centre($axis: "div"){
